@@ -11,9 +11,9 @@ interface StatsProps {
 
 const Stats: React.FC<StatsProps> = ({ stats }) => {
   const statItems = [
-    { label: "Today", value: stats.today, icon: CalendarIcon },
-    { label: "This Week", value: stats.week, icon: CalendarDaysIcon },
-    { label: "This Month", value: stats.month, icon: BarChart3Icon },
+    { label: "Uno munsi", value: stats.today, icon: CalendarIcon },
+    { label: "Iyi Ndwi", value: stats.week, icon: CalendarDaysIcon },
+    { label: "Uku kwezi", value: stats.month, icon: BarChart3Icon },
   ];
 
   return (

@@ -26,7 +26,7 @@ function App() {
         <div className="bg-white rounded-2xl shadow-lg p-6 mb-8">
           <div className="flex items-center justify-between mb-4">
             <h2 className="text-xl font-semibold text-gray-800">
-              Today's Drinks
+              Ibinyobwa vy'uyu munsi
             </h2>
             <TrendingUpIcon className="text-blue-500" />
           </div>
