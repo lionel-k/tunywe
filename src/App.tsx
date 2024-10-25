@@ -39,7 +39,11 @@ function App() {
         <Stats stats={stats} />
 
         <footer className="mt-12 text-center text-sm text-gray-500">
-          <p>Remember to drink responsibly! 🌟</p>
+          <p>Uribuka kunywa mu rugero! 🌟</p>
+          <p>&copy; 2024 Aho</p>
+          <a href="/privacy-policy" className="text-blue-500 hover:underline">
+            Privacy Policy
+          </a>
         </footer>
       </div>
     </div>
