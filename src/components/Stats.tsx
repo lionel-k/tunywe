@@ -12,7 +12,7 @@ interface StatsProps {
 const Stats: React.FC<StatsProps> = ({ stats }) => {
   const statItems = [
     { label: "Uno munsi", value: stats.today, icon: CalendarIcon },
-    { label: "Iyi Ndwi", value: stats.week, icon: CalendarDaysIcon },
+    { label: "Iyi ndwi", value: stats.week, icon: CalendarDaysIcon },
     { label: "Uku kwezi", value: stats.month, icon: BarChart3Icon },
   ];
 

@@ -1,5 +1,4 @@
-import React from "react";
-import { BeerIcon, CalendarDaysIcon, TrendingUpIcon } from "lucide-react";
+import { BeerIcon, TrendingUpIcon } from "lucide-react";
 import { useQuotes } from "./hooks/useQuotes";
 import { useDrinkingStats } from "./hooks/useDrinkingStats";
 import Stats from "./components/Stats";
