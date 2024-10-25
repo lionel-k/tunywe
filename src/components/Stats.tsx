@@ -26,6 +26,7 @@ const Stats: React.FC<StatsProps> = ({ stats }) => {
           <Icon className="w-6 h-6 mx-auto mb-2 text-blue-500" />
           <p className="text-sm text-gray-600 mb-1">{label}</p>
           <p className="text-xl font-bold text-gray-800">{value}</p>
+          <p className="text-xs font-bold text-gray-800">{value * 2000} Fbu</p>
         </div>
       ))}
     </div>
