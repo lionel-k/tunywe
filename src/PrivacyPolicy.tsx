@@ -52,6 +52,20 @@ function PrivacyPolicy() {
             periodically. Continued use of the app indicates acceptance of the
             policy.
           </p>
+          <h2 className="text-xl font-semibold text-gray-800 mb-2">
+            6. Contact Us
+          </h2>
+          <p className="text-gray-600 mb-4">
+            For any questions regarding this privacy policy, please contact us
+            at{" "}
+            <a
+              href="mailto:contact@aho.bi"
+              className="text-blue-500 hover:underline"
+            >
+              contact@aho.bi
+            </a>
+            .
+          </p>
           <p className="text-gray-600">© 2024 Aho - All rights reserved.</p>
         </div>
       </div>
