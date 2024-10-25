@@ -9,50 +9,48 @@ function PrivacyPolicy() {
         </header>
         <div className="bg-white rounded-2xl shadow-lg p-6">
           <p className="text-gray-600 mb-4">
-            Tunywe is committed to protecting your privacy. This privacy policy
-            outlines the types of personal information we collect and how we
-            use, store, and protect that information.
+            Tunywe respects your privacy. This policy explains how we collect,
+            use, and protect your information.
           </p>
           <h2 className="text-xl font-semibold text-gray-800 mb-2">
             1. Information We Collect
           </h2>
           <p className="text-gray-600 mb-4">
-            We collect information you provide directly to us, such as when you
-            create an account, add transactions, or communicate with us. The
-            information we may collect includes your email address, transaction
-            data (e.g., descriptions, amounts, dates), and usage data.
+            We collect minimal data, such as drink tracking information, usage
+            statistics, and app interaction details. No personal identifiers
+            like email addresses or names are required.
           </p>
           <h2 className="text-xl font-semibold text-gray-800 mb-2">
             2. How We Use Your Information
           </h2>
           <p className="text-gray-600 mb-4">
-            The information collected is used to provide and improve the Tunywe
-            app's services, including storing transaction data, offering
-            insights on expenses, and sending updates.
+            The collected data is used solely for tracking your drink habits,
+            displaying statistics, and improving the app's features. We do not
+            share your data with third parties.
           </p>
           <h2 className="text-xl font-semibold text-gray-800 mb-2">
             3. Data Storage and Security
           </h2>
           <p className="text-gray-600 mb-4">
-            Your data is stored securely in the cloud using Firebase. We
-            implement security measures to ensure your data is protected.
-            However, no system can be completely secure, and we encourage you to
-            use the app cautiously.
+            Your data is stored locally on your device. We do not store any data
+            on external servers. Ensure your device is secure to protect your
+            information.
           </p>
           <h2 className="text-xl font-semibold text-gray-800 mb-2">
             4. Your Rights
           </h2>
           <p className="text-gray-600 mb-4">
-            You have the right to access, update, or delete your data at any
-            time. Contact us at contact@aho.bi for any data-related inquiries.
+            Since the app does not store personal information on our servers,
+            you control all your data locally. You can delete or reset the app
+            to clear all data.
           </p>
           <h2 className="text-xl font-semibold text-gray-800 mb-2">
             5. Changes to This Policy
           </h2>
           <p className="text-gray-600 mb-4">
-            We may update this privacy policy periodically. Please review it
-            regularly. Continued use of the Tunywe app after updates constitutes
-            acceptance of the revised policy.
+            We may update this policy occasionally. Please review it
+            periodically. Continued use of the app indicates acceptance of the
+            policy.
           </p>
           <p className="text-gray-600">© 2024 Aho - All rights reserved.</p>
         </div>
