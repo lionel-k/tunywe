@@ -19,7 +19,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => (
           </Link>
         </div>
         <h1 className="text-3xl font-bold text-gray-800 mb-2">Tunywe</h1>
-        <p className="text-gray-600">Stay hydrated, stay happy!</p>
+        <p className="text-gray-600">Guma unywa, guma unezerewe!</p>
       </header>
       {children}
       <footer className="mt-12 text-center text-sm text-gray-500">
