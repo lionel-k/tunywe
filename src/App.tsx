@@ -15,7 +15,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => (
       <header className="text-center mb-8">
         <div className="inline-block p-4 rounded-full bg-blue-500 text-white mb-4">
           <Link to="/">
-            <BeerIcon size={32} />
+            <BeerIcon size={32} />;
           </Link>
         </div>
         <h1 className="text-3xl font-bold text-gray-800 mb-2">Tunywe</h1>
