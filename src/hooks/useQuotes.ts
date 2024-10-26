@@ -28,8 +28,9 @@ export const useQuotes = () => {
         .toLowerCase();
       const hour = now.getHours().toString();
 
-      if (quotesData[day] && quotesData[day][hour]) {
-        setCurrentQuote(quotesData[day][hour]);
+      const dayQuotes = quotesData[day] as { [key: string]: string };
+      if (dayQuotes && dayQuotes[hour]) {
+        setCurrentQuote(dayQuotes[hour]);
       } else {
         setCurrentQuote("No quote available for this time.");
       }

@@ -1,33 +1,31 @@
 {
-  "quotes": {
-    "monday": {
-      "7": "Good morning! How about some coffee instead of a beer?",
-      "8": "It's too early for a drink. Wait a bit longer.",
-      "23": "You should be in bed, not with a drink. Sleep well!",
-      "0": "Too late for drinks. You need rest, not beer."
-    },
-    "friday": {
-      "7": "Good morning! How about some coffee instead of a beer?",
-      "8": "It's too early for a drink. Wait a bit longer.",
-      "23": "Midnight is near. Are you still having fun?",
-      "0": "It's midnight! Keep the party alive!"
-    },
-    "saturday": {
-      "7": "Good morning! How about some coffee instead of a beer?",
-      "8": "It's too early for a drink. Wait a bit longer.",
-      "23": "Midnight is near. Are you still having fun?",
-      "0": "It's midnight! Keep the party alive!",
-      "1": "It's 1am! Keep the party alive!",
-      "2": "It's 2am! Keep the party alive!",
-      "3": "It's 3am! Keep the party alive!",
-      "4": "It's 4am! Keep the party alive!",
-      "5": "It's 5am! Keep the party alive!"
-    },
-    "sunday": {
-      "7": "Good morning! How about some coffee instead of a beer?",
-      "8": "It's too early for a drink. Wait a bit longer.",
-      "23": "Midnight is near. Are you still having fun?",
-      "0": "It's midnight! Keep the party alive!"
-    }
+  "monday": {
+    "7": "Good morning! How about some coffee instead of a beer?",
+    "8": "It's too early for a drink. Wait a bit longer.",
+    "23": "You should be in bed, not with a drink. Sleep well!",
+    "0": "Too late for drinks. You need rest, not beer."
+  },
+  "friday": {
+    "7": "Good morning! How about some coffee instead of a beer?",
+    "8": "It's too early for a drink. Wait a bit longer.",
+    "23": "Midnight is near. Are you still having fun?",
+    "0": "It's midnight! Keep the party alive!"
+  },
+  "saturday": {
+    "7": "Good morning! How about some coffee instead of a beer?",
+    "8": "It's too early for a drink. Wait a bit longer.",
+    "23": "Midnight is near. Are you still having fun?",
+    "0": "It's midnight! Keep the party alive!",
+    "1": "It's 1am! Keep the party alive!",
+    "2": "It's 2am! Keep the party alive!",
+    "3": "It's 3am! Keep the party alive!",
+    "4": "It's 4am! Keep the party alive!",
+    "5": "It's 5am! Keep the party alive!"
+  },
+  "sunday": {
+    "7": "Good morning! How about some coffee instead of a beer?",
+    "8": "It's too early for a drink. Wait a bit longer.",
+    "23": "Midnight is near. Are you still having fun?",
+    "0": "It's midnight! Keep the party alive!"
   }
 }
