@@ -20,11 +20,20 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => (
           </Link>
         </div>
         <h1 className="text-3xl font-bold text-gray-800 mb-2">Tunywe</h1>
-        <p className="text-gray-600">Amazi n'ubuzima !</p>
+        <p className="text-gray-600">Mu rugero rwinshi ! 🌟</p>
       </header>
       {children}
       <footer className="mt-12 text-center text-sm text-gray-500">
-        <p>Uribuka kunywa mu rugero! 🌟</p>
+        <p>
+          <Link to="/privacy-policy" className="text-blue-500 hover:underline">
+            Privacy Policy
+          </Link>{" "}
+        </p>
+        <p>
+          <Link to="/how-it-works" className="text-blue-500 hover:underline">
+            How Does This App Work?
+          </Link>
+        </p>
         <p>
           &copy; 2024{" "}
           <a
@@ -34,13 +43,6 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => (
             Aho
           </a>
         </p>
-        <Link to="/privacy-policy" className="text-blue-500 hover:underline">
-          Privacy Policy
-        </Link>{" "}
-        |{" "}
-        <Link to="/how-it-works" className="text-blue-500 hover:underline">
-          How Does This App Work?
-        </Link>
       </footer>
     </div>
   </div>
