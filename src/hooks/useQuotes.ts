@@ -1,31 +1,49 @@
 import { useState, useEffect } from "react";
 
-const quotes = [
-  "Drink water like a champion! Stay fresh.",
-  "The best drink is the one you don't have tonight.",
-  "Why drink beer when you can drink life? Stay sober!",
-  "A clear mind is the best kind of buzz.",
-  "Water is the real hero. It's always sober.",
-  "No hangover, no problem. Stay dry today!",
-  "A sober mind makes the best choices.",
-  "Stay strong, stay dry. Your future will thank you.",
-];
+interface QuotesData {
+  [day: string]: {
+    [hour: string]: string;
+  };
+}
 
 export const useQuotes = () => {
-  const [currentQuote, setCurrentQuote] = useState("");
+  const [currentQuote, setCurrentQuote] = useState<string>("Loading...");
+  const [quotesData, setQuotesData] = useState<QuotesData | null>(null);
 
   useEffect(() => {
+    // Fetch quotes.json
+    fetch("/quotes.json")
+      .then((response) => response.json())
+      .then((data: QuotesData) => setQuotesData(data))
+      .catch((error) => console.error("Failed to load quotes", error));
+  }, []);
+
+  useEffect(() => {
+    if (!quotesData) return;
+
     const updateQuote = () => {
-      const hour = new Date().getHours();
-      const index = Math.floor((hour / 24) * quotes.length);
-      setCurrentQuote(quotes[index]);
+      const now = new Date();
+      const day = now
+        .toLocaleString("en-US", { weekday: "long" })
+        .toLowerCase();
+      const hour = now.getHours().toString();
+
+      if (quotesData[day] && quotesData[day][hour]) {
+        setCurrentQuote(quotesData[day][hour]);
+      } else {
+        setCurrentQuote("No quote available for this time.");
+      }
     };
 
+    // Update the quote initially
     updateQuote();
-    const interval = setInterval(updateQuote, 60000); // Update every minute
 
+    // Set up an interval to update the quote every hour
+    const interval = setInterval(updateQuote, 60 * 60 * 1000);
+
+    // Clear the interval when the component unmounts
     return () => clearInterval(interval);
-  }, []);
+  }, [quotesData]);
 
   return { currentQuote };
 };
