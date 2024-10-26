@@ -15,14 +15,33 @@ const getInitialStats = (): DrinkingStats => {
     const lastUpdate = new Date(parsed.lastUpdate);
     const now = new Date();
 
-    // Reset if it's a new day
+    // Reset daily stats if it's a new day
     if (lastUpdate.getDate() !== now.getDate()) {
-      return { today: 0, week: 0, month: 0 };
+      parsed.stats.today = 0;
+    }
+
+    // Reset weekly stats if it's a new week
+    const lastWeek = getWeekNumber(lastUpdate);
+    const currentWeek = getWeekNumber(now);
+    if (lastWeek !== currentWeek) {
+      parsed.stats.week = 0;
+    }
+
+    // Reset monthly stats if it's a new month
+    if (lastUpdate.getMonth() !== now.getMonth()) {
+      parsed.stats.month = 0;
     }
 
     return parsed.stats;
   }
   return { today: 0, week: 0, month: 0 };
+};
+
+const getWeekNumber = (date: Date): number => {
+  const firstDayOfYear = new Date(date.getFullYear(), 0, 1);
+  const pastDaysOfYear =
+    (date.getTime() - firstDayOfYear.getTime()) / (1000 * 60 * 60 * 24);
+  return Math.ceil((pastDaysOfYear + firstDayOfYear.getDay() + 1) / 7);
 };
 
 export const useDrinkingStats = () => {
