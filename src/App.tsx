@@ -7,6 +7,7 @@ import Stats from "./components/Stats";
 import QuoteDisplay from "./components/QuoteDisplay";
 import Counter from "./components/Counter";
 import PrivacyPolicy from "./PrivacyPolicy";
+import HowItWorks from "./HowItWorks";
 
 // Layout component to share common elements across different pages
 const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => (
@@ -15,7 +16,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => (
       <header className="text-center mb-8">
         <div className="inline-block p-4 rounded-full bg-blue-500 text-white mb-4">
           <Link to="/">
-            <BeerIcon size={32} />;
+            <BeerIcon size={32} />
           </Link>
         </div>
         <h1 className="text-3xl font-bold text-gray-800 mb-2">Tunywe</h1>
@@ -33,9 +34,13 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => (
             Aho
           </a>
         </p>
-        <a href="/privacy-policy" className="text-blue-500 hover:underline">
+        <Link to="/privacy-policy" className="text-blue-500 hover:underline">
           Privacy Policy
-        </a>
+        </Link>{" "}
+        |{" "}
+        <Link to="/how-it-works" className="text-blue-500 hover:underline">
+          How Does This App Work?
+        </Link>
       </footer>
     </div>
   </div>
@@ -75,6 +80,14 @@ function App() {
           element={
             <Layout>
               <PrivacyPolicy />
+            </Layout>
+          }
+        />
+        <Route
+          path="/how-it-works"
+          element={
+            <Layout>
+              <HowItWorks />
             </Layout>
           }
         />
