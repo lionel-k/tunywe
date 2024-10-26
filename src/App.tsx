@@ -24,7 +24,15 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => (
       {children}
       <footer className="mt-12 text-center text-sm text-gray-500">
         <p>Uribuka kunywa mu rugero! 🌟</p>
-        <p>&copy; 2024 Aho</p>
+        <p>
+          &copy; 2024{" "}
+          <a
+            href="https://www.aho.bi"
+            className="text-blue-500 hover:underline"
+          >
+            Aho
+          </a>
+        </p>
         <a href="/privacy-policy" className="text-blue-500 hover:underline">
           Privacy Policy
         </a>
