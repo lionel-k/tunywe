@@ -1,14 +1,14 @@
 import { useState, useEffect } from "react";
 
 const quotes = [
-  "It's five o'clock somewhere... probably on Mars!",
-  "I don't always drink water, but when I do, I prefer it fermented.",
-  "Save water, drink beer! 🍺",
-  "Wine not have another?",
-  "You can't buy happiness, but you can prepare a cocktail, and that's kind of the same thing.",
-  "I'm not drunk, I'm just chemically enhanced!",
-  "Time to wine down!",
-  "Beer today, gone tomorrow!",
+  "Drink water like a champion! Stay fresh.",
+  "The best drink is the one you don't have tonight.",
+  "Why drink beer when you can drink life? Stay sober!",
+  "A clear mind is the best kind of buzz.",
+  "Water is the real hero. It's always sober.",
+  "No hangover, no problem. Stay dry today!",
+  "A sober mind makes the best choices.",
+  "Stay strong, stay dry. Your future will thank you.",
 ];
 
 export const useQuotes = () => {
